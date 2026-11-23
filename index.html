@@ -1,69 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<>
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <>EchoCards — Offline Flashcard & Study App</>etitltitle
+  <title>EchoCards — Offline Flashcard & Study App</title>
   <link rel="stylesheet" href="styles.css" />
-</>headhead
+</head>
 <body>
   <header class="app-header">
-    < class="brand">
-      < class="brand-logo" aria-hidden="true">🔊</>nspaspan
+    <div class="brand">
+      <span class="brand-logo" aria-hidden="true">🔊</span>
       <div>
-        <>EchoCards</>h1h1
-        < class="subtitle">Offline flashcards with speech synthesis</>pp
+        <h1>EchoCards</h1>
+        <p class="subtitle">Offline flashcards with speech synthesis</p>
       </div>
-    </>divdiv
+    </div>
 
     <div class="header-controls">
       <div class="tts-bar" aria-label="Text to speech controls">
-        < id="muteBtn" class="btn btn-outline" type="button" title="Toggle Mute">
+        <button id="muteBtn" class="btn btn-outline" type="button" title="Toggle Mute">
           🔊 Sound On
-        </>onbuttbutton
+        </button>
 
-        < class="rate-control" for="rateSlider">
-          <span>Speed: < id="rateValue">1.0x</>ngstrostrong</span>
+        <label class="rate-control" for="rateSlider">
+          <span>Speed: <strong id="rateValue">1.0x</strong></span>
           <input id="rateSlider" type="range" min="0.5" max="2.0" step="0.1" value="1.0" />
-        </>lbelalabel
+        </label>
 
-        < class="auto-speak-control">
+        <label class="auto-speak-control">
           <input id="autoSpeakToggle" type="checkbox" />
-          <>Auto-speak</>spanspan
-        </>bellalabel
+          <span>Auto-speak</span>
+        </label>
 
         <select id="voiceSelect" class="voice-select" aria-label="Select speech voice">
-          < value="">Default Voice</>niooptoption
+          <option value="">Default Voice</option>
         </select>
       </div>
 
       <div class="mode-switcher" role="group" aria-label="View mode">
-        < id="studyModeBtn" class="mode-btn active" type="button">Study Mode</>onbuttbutton
-        < id="manageModeBtn" class="mode-btn" type="button">Manage Cards</>ntobutbutton
+        <button id="studyModeBtn" class="mode-btn active" type="button">Study Mode</button>
+        <button id="manageModeBtn" class="mode-btn" type="button">Manage Cards</button>
       </div>
     </div>
   </header>
 
   <main class="app-layout">
     <aside class="sidebar">
-      <-deckdeck-list id="deckList"></list>
+      <deck-list id="deckList"></deck-list>
     </aside>
 
     <section class="workspace">
       <div id="activeDeckBanner" class="deck-banner">
         <div>
-          < class="deck-banner-label">Current Deck</>nspaspan
-          < id="activeDeckTitle">Loading decks...</>h2h2
+          <span class="deck-banner-label">Current Deck</span>
+          <h2 id="activeDeckTitle">Loading decks...</h2>
         </div>
-        < id="activeDeckCount" class="deck-count-pill">0 cards</>anspspan
+        <span id="activeDeckCount" class="deck-count-pill">0 cards</span>
       </div>
 
-      <-shflaflash-card id="flashCardView"></card>
-      <-dcarcard-editor id="cardEditorView" class="hidden"></editor>
+      <flash-card id="flashCardView"></flash-card>
+      <card-editor id="cardEditorView" class="hidden"></card-editor>
     </section>
   </main>
 
   <script type="module" src="js/main.js"></script>
 </body>
 </html>
-html>body></script>main>-dcarcard-editor></card-editor>-shflaflash-card></flash-card>id></span>id></h2>""></span></div></section>aside>-deckdeck-list></deck-list></aside></main>class>div>id></button>""></button></div>class>value></option></select>""></span></label>"">id></strong></span></label>""></button></div>"">class></p>""></h1></div>></span></div></header></body>>""></div></title></head></html>""
