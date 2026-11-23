@@ -256,7 +256,7 @@ class DeckList extends HTMLElement {
                     }</span>
                     </div>
                     <button class="delete-btn" type="button" data-delete-id="${deck.id}" title="Delete deck">
-                      ✕
+                      Delete
                     </button>
                   </li>
                 `

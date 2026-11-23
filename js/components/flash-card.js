@@ -405,16 +405,16 @@ class FlashCard extends HTMLElement {
 
         <div class="controls-grid">
           <div class="btn-group">
-            <button id="prevBtn" type="button">← Previous</button>
+            <button id="prevBtn" type="button">Previous</button>
             <button id="flipBtn" type="button">Flip Card</button>
-            <button id="speakBtn" class="btn-speak" type="button">🔊 Speak</button>
-            <button id="nextBtn" type="button">Next →</button>
-            <button id="shuffleBtn" type="button">🔀 Shuffle</button>
+            <button id="speakBtn" class="btn-speak" type="button">Speak</button>
+            <button id="nextBtn" type="button">Next</button>
+            <button id="shuffleBtn" type="button">Shuffle</button>
           </div>
 
           <div class="btn-group">
             <button id="againBtn" class="btn-again" type="button">Study Again</button>
-            <button id="gotItBtn" class="btn-gotit" type="button">✓ Got It</button>
+            <button id="gotItBtn" class="btn-gotit" type="button">Got It</button>
           </div>
         </div>
 

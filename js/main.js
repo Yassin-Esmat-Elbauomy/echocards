@@ -32,7 +32,7 @@ const manageModeBtn = document.getElementById('manageModeBtn');
 let currentDeckId = null;
 
 function updateMuteButtonUI(muted) {
-  muteBtn.textContent = muted ? '🔇 Muted' : '🔊 Sound On';
+  muteBtn.textContent = muted ? 'Muted' : 'Sound On';
 }
 
 async function initTTSControls() {
